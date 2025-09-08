@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrik Hlavac – Frontend Developer Portfolio</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f7f9fc;
+        color: #333;
+      }
+
+      /* Header */
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        font-size: 2em;
+        margin: 0;
+        color: #3498db;
+      }
+
+      .header p {
+        margin: 5px 0 0;
+        font-size: 1.2em;
+        color: #2c3e50;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 4px;
+        margin-top: 25px;
+      }
+
+      .project-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      .project-list li {
+        background-color: #fff;
+        border: 1px solid #dfe3e6;
+        border-radius: 6px;
+        padding: 16px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s;
+      }
+
+      .project-list li:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .project-title svg {
+        width: 24px;
+        height: 24px;
+        stroke: #3498db;
+        flex-shrink: 0;
+      }
+
+      .project-title a {
+        text-decoration: none;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      .project-title a:hover {
+        text-decoration: underline;
+      }
+
+      /* Screenshot galerie */
+      .screenshots {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .screenshots img {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+      }
+
+      .screenshot {
+        width: 100%;
+        border-radius: 6px;
+        margin-top: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      /* Kývání při hoveru */
+      .screenshot:hover {
+        animation: swing 1s ease-in-out infinite;
+      }
+
+      /* Definice kývání */
+      @keyframes swing {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(2deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        75% {
+          transform: rotate(-2deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      .live-project {
+        margin-top: 6px;
+        font-style: italic;
+        color: #2c3e50;
+        font-size: 14px;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .contact-info div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        color: #2c3e50;
+      }
+
+      .contact-info svg {
+        width: 20px;
+        height: 20px;
+        stroke-width: 1.6;
+        flex-shrink: 0;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #777;
+      }
+
+      /* Mobilní verze */
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 1.6em;
+        }
+
+        .header p {
+          font-size: 1em;
+        }
+
+        .project-list {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Patrik Hlavac</h1>
+      <p>Frontend Developer Portfolio</p>
+    </div>
+
+    <h2>Frontend projekty</h2>
+    <ul class="project-list">
+      <li>
+        <div class="project-title">
+          <!-- Monitor -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+          <a
+            href="https://github.com/patrikdeveloper/netflix-lookalike-website"
+            target="_blank"
+            >Netflix Lookalike Website</a
+          >
+        </div>
+        <div class="screenshots">
+          <img
+            src="images/homepage.png"
+            alt="Netflix project screenshot 1"
+            class="screenshot"
+          />
+          <img
+            src="images/films-page.png"
+            alt="Netflix project screenshot 2"
+            class="screenshot"
+          />
+          <img
+            src="images/registration-form.png"
+            alt="Netflix project screenshot 3"
+            class="screenshot"
+          />
+        </div>
+      </li>
+
+      <li>
+        <div class="project-title">
+          <!-- Layout -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+          </svg>
+          <a
+            href="https://github.com/patrikdeveloper/responsive-website"
+            target="_blank"
+            >Responsive Website</a
+          >
+        </div>
+        <div class="screenshots">
+          <img
+            src="images/screenshot-responsive.png"
+            alt="Responsive project screenshot 1"
+            class="screenshot"
+          />
+          <img
+            src="images/responsive-website2.png"
+            alt="Responsive project screenshot 2"
+            class="screenshot"
+          />
+        </div>
+      </li>
+    </ul>
+
+    <h2>Python projekty</h2>
+    <ul class="project-list">
+      <li>
+        <div class="project-title">
+          <!-- Magnifier -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <a
+            href="https://github.com/patrikdeveloper/elections-scraper"
+            target="_blank"
+            >Elections Scraper</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="project-title">
+          <!-- Gamepad -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <rect x="6" y="6" width="12" height="12" rx="2" ry="2" />
+            <line x1="12" y1="8" x2="12" y2="16" />
+            <line x1="8" y1="12" x2="16" y2="12" />
+          </svg>
+          <a
+            href="https://github.com/patrikdeveloper/bulls-cows-game"
+            target="_blank"
+            >Bulls & Cows Game</a
+          >
+        </div>
+      </li>
+      <li>
+        <div class="project-title">
+          <!-- Document -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M4 4h16v16H4z" />
+            <line x1="8" y1="8" x2="16" y2="8" />
+            <line x1="8" y1="12" x2="16" y2="12" />
+            <line x1="8" y1="16" x2="12" y2="16" />
+          </svg>
+          <a
+            href="https://github.com/patrikdeveloper/text-analyzer"
+            target="_blank"
+            >Text Analyzer</a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <h2>Živý projekt</h2>
+    <ul class="project-list">
+      <li>
+        <div class="project-title">
+          <!-- Globe -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <line x1="12" y1="2" x2="12" y2="22" />
+          </svg>
+          <a href="https://naucsehtml.cz" target="_blank">NaučSeHTML.cz</a>
+        </div>
+        <div class="live-project">Živý web, který učí základy HTML5.</div>
+        <div class="screenshots">
+          <img
+            src="images/naucsehtml.png"
+            alt="Responsive project screenshot 1"
+            class="screenshot"
+          />
+          <img
+            src="images/naucsehtml1.png"
+            alt="Responsive project screenshot 2"
+            class="screenshot"
+          />
+        </div>
+      </li>
+    </ul>
+
+    <h2>Kontakt</h2>
+    <div class="contact-info">
+      <div>
+        <!-- Email -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 4h16v16H4z" />
+          <polyline points="4,4 12,13 20,4" />
+        </svg>
+        pathlavac@seznam.cz
+      </div>
+      <div>
+        <!-- Telefon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 6.1 2 2 0 0 1 4.1 4h3a2 2 0 0 1 2 1.72c.12.81.37 1.61.73 2.34a2 2 0 0 1-.45 2.18l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.18-.45c.73.36 1.53.61 2.34.73a2 2 0 0 1 1.72 2.01z"
+          />
+        </svg>
+        +420 775 305 808
+      </div>
+      <div>
+        <!-- Lokace -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"
+          />
+        </svg>
+        Přerov, ČR
+      </div>
+      <div>
+        <!-- GitHub -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.807 1.305 3.492.997.108-.776.418-1.305.762-1.605-2.665-.303-5.467-1.335-5.467-5.934 0-1.31.468-2.382 1.235-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.288-1.552 3.294-1.23 3.294-1.23.654 1.653.243 2.873.12 3.176.77.84 1.232 1.912 1.232 3.222 0 4.61-2.807 5.628-5.479 5.926.43.37.823 1.096.823 2.21v3.277c0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.63-5.373-12-12-12z"
+          />
+        </svg>
+        <a href="https://github.com/patrikdeveloper" target="_blank"
+          >GitHub profil</a
+        >
+      </div>
+    </div>
+
+    <footer>© 2025 Patrik Hlavac</footer>
+  </body>
+</html>
