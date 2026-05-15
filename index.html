@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patrik Hlavac – Frontend Developer Portfolio</title>
-    <style>
+    <link rel="stylesheet" href="style.css" />
+    <!--<style>
       *,
       *::before,
       *::after {
@@ -189,13 +190,44 @@
           grid-template-columns: 1fr;
         }
       }
-    </style>
+    </style>-->
   </head>
   <body>
-    <div class="header">
-      <h1>Patrik Hlavac</h1>
+    <!--<div class="header">
+      <h1>
+        <img
+          src="images/hacker.svg"
+          alt=""
+          style="height: 1em; vertical-align: middle; margin-right: 0.3em"
+        />
+        Patrik Hlavac
+      </h1>
+
       <p>Frontend Developer Portfolio</p>
-    </div>
+    </div>-->
+
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <img src="images/hacker.svg" alt="Logo" />
+
+          <div class="logo-text">
+            <span class="logo-name">Patrik Hlavac</span>
+            <span class="logo-role">Front-End Developer</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#about">O mně</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="nav-btn">Spolupráce</a>
+      </div>
+    </header>
 
     <h2>Frontend projekty</h2>
     <ul class="project-list">
@@ -369,7 +401,7 @@
       </li>
     </ul>
 
-    <h2>Kontakt</h2>
+    <h2 id="contact">Kontakt</h2>
     <div class="contact-info">
       <div>
         <!-- Email -->
@@ -405,7 +437,7 @@
             d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.807 1.305 3.492.997.108-.776.418-1.305.762-1.605-2.665-.303-5.467-1.335-5.467-5.934 0-1.31.468-2.382 1.235-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.288-1.552 3.294-1.23 3.294-1.23.654 1.653.243 2.873.12 3.176.77.84 1.232 1.912 1.232 3.222 0 4.61-2.807 5.628-5.479 5.926.43.37.823 1.096.823 2.21v3.277c0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.63-5.373-12-12-12z"
           />
         </svg>
-        <a href="https://github.com/patrikdeveloper" target="_blank"
+        <a href="https://github.com/patrikhlavac" target="_blank"
           >GitHub profil</a
         >
       </div>
