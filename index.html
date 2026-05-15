@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 / ☀️</button>
+
     <header class="navbar">
       <div class="nav-container">
         <a href="#" class="logo">
@@ -203,47 +205,54 @@
     </ul>
 
     <h2 id="contact">Kontakt</h2>
+
     <div class="contact-info">
-      <div>
-        <!-- Email -->
+      <a class="contact-item" href="mailto:pathlavac@seznam.cz">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path d="M4 4h16v16H4z" />
           <polyline points="4,4 12,13 20,4" />
         </svg>
-        pathlavac@seznam.cz
-      </div>
-      <div>
-        <!-- Telefon -->
+        <span>pathlavac@seznam.cz</span>
+      </a>
+
+      <div class="contact-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path
             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.11 6.1 2 2 0 0 1 4.1 4h3a2 2 0 0 1 2 1.72c.12.81.37 1.61.73 2.34a2 2 0 0 1-.45 2.18l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.18-.45c.73.36 1.53.61 2.34.73a2 2 0 0 1 1.72 2.01z"
           />
         </svg>
-        +420 775 305 808
+        <span>+420 775 305 808</span>
       </div>
-      <div>
-        <!-- Lokace -->
+
+      <div class="contact-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <circle cx="12" cy="12" r="3" />
           <path
             d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"
           />
         </svg>
-        Přerov, ČR
+        <span>Přerov, ČR</span>
       </div>
-      <div>
-        <!-- GitHub -->
+
+      <a
+        class="contact-item"
+        href="https://github.com/patrikhlavac"
+        target="_blank"
+      >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path
             d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.385-1.333-1.754-1.333-1.754-1.089-.745.083-.73.083-.73 1.205.084 1.84 1.24 1.84 1.24 1.07 1.835 2.807 1.305 3.492.997.108-.776.418-1.305.762-1.605-2.665-.303-5.467-1.335-5.467-5.934 0-1.31.468-2.382 1.235-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.288-1.552 3.294-1.23 3.294-1.23.654 1.653.243 2.873.12 3.176.77.84 1.232 1.912 1.232 3.222 0 4.61-2.807 5.628-5.479 5.926.43.37.823 1.096.823 2.21v3.277c0 .32.216.694.825.576C20.565 21.796 24 17.3 24 12c0-6.63-5.373-12-12-12z"
           />
         </svg>
-        <a href="https://github.com/patrikhlavac" target="_blank"
-          >GitHub profil</a
-        >
-      </div>
+        <span>GitHub profil</span>
+      </a>
     </div>
-
     <footer>© 2025 Patrik Hlavac</footer>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark");
+      }
+    </script>
   </body>
 </html>
