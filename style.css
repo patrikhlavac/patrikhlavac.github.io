@@ -73,7 +73,6 @@ body.dark {
 
 .themes-toggle {
   display: flex;
-  
 }
 
 /*.navbar {
@@ -349,7 +348,9 @@ h2 {
 }
 
 .screenshot {
+  display: block;
   width: 100%;
+  height: auto;
   border-radius: 6px;
   margin-top: 8px;
   transition: transform 0.3s ease;
@@ -359,6 +360,18 @@ h2 {
 .screenshot:hover {
   animation: swing 1s ease-in-out infinite;
 }
+
+
+@media (max-width: 767px) {
+  .glightbox-container .gslide-image img {
+    max-width: 90vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 
 /* Definice kývání */
 @keyframes swing {
@@ -452,4 +465,19 @@ footer {
   .project-list {
     grid-template-columns: 1fr;
   }
+}
+
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+body.glightbox-open {
+  padding-right: 0 !important;
+}
+
+body.glightbox-open {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
 }
