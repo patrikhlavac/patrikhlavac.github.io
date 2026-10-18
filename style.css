@@ -481,3 +481,12 @@ body.glightbox-open {
   max-width: 1000px;
   margin-inline: auto;
 }
+
+/* šipka u projektu*/
+.arrow-icon {
+  transition: transform 0.25s ease;
+}
+
+.arrow-icon:hover {
+  transform: translateY(-2px);
+}
