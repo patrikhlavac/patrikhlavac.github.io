@@ -17,7 +17,7 @@
       <button class="theme-toggle" onclick="toggleTheme()">🌙 / ☀️</button>
     </div>
 
-    <header class="navbar">
+    <header class="navbar" id="top">
       <div class="nav-container">
         <a href="#" class="logo">
           <img src="images/hacker.svg" alt="Logo" />
@@ -69,133 +69,283 @@
       <div class="hero-decoration" aria-hidden="true">&lt;code /&gt;</div>
     </section>
 
-    <h2 id="projects">Frontend projekty</h2>
-    <ul class="project-list">
-      <li>
-        <div class="project-title">
-          <!-- Monitor -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-            <line x1="8" y1="21" x2="16" y2="21" />
-            <line x1="12" y1="17" x2="12" y2="21" />
-          </svg>
-          <a href="https://www.sportsfood.cz" target="_blank"
-            >SportsFood.cz Website<svg
-              class="arrow-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M7 17 17 7" />
-              <path d="M7 7h10v10" /></svg
-          ></a>
-        </div>
-
-        <div class="live-project">
-          Affiliate projekt zaměřený na sportovní výživu, fitness doplňky a
-          produkty pro aktivní životní styl.
-        </div>
-        <div class="screenshots">
-          <a
-            href="images/sportsfood-picture-mobil.webp"
-            class="glightbox"
-            data-gallery="project-gallery"
-          >
-            <img
-              src="images/sportsfood-picture-desktop.webp"
-              alt="SportsFood.cz website screenshot 1"
-              class="screenshot"
-            />
-          </a>
-          <a
-            href="images/sportsfood-picture-2-mobil.webp"
-            class="glightbox"
-            data-gallery="project-gallery"
-          >
-            <img
-              src="images/sportsfood-picture-2-desktop.webp"
-              alt="SportsFood.cz website screenshot 2"
-              class="screenshot"
-            />
-          </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="project-title">
-          <!-- Layout -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <rect x="3" y="3" width="7" height="7" />
-            <rect x="14" y="3" width="7" height="7" />
-            <rect x="14" y="14" width="7" height="7" />
-            <rect x="3" y="14" width="7" height="7" />
-          </svg>
-          <a href="https://wildsome.netlify.app/" target="_blank"
-            >Wildsome Website
+    <section class="frontend-projects-section">
+      <h2 id="projects">Front-end projekty</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-title">
+            <!-- Monitor -->
             <svg
-              class="arrow-icon"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
               fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
-              stroke-width="2"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            <a href="https://www.sportsfood.cz" target="_blank"
+              >SportsFood.cz Website<svg
+                class="arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+          </div>
+
+          <div class="live-project">
+            Affiliate projekt zaměřený na sportovní výživu, fitness doplňky a
+            produkty pro aktivní životní styl.
+          </div>
+          <div class="screenshots">
+            <a
+              href="images/sportsfood-picture-mobil.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/sportsfood-picture-desktop.webp"
+                alt="SportsFood.cz website screenshot 1"
+                class="screenshot"
+              />
+            </a>
+            <a
+              href="images/sportsfood-picture-2-mobil.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/sportsfood-picture-2-desktop.webp"
+                alt="SportsFood.cz website screenshot 2"
+                class="screenshot"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="project-list">
+        <li>
+          <div class="project-title">
+            <!-- Layout -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <rect x="3" y="3" width="7" height="7" />
+              <rect x="14" y="3" width="7" height="7" />
+              <rect x="14" y="14" width="7" height="7" />
+              <rect x="3" y="14" width="7" height="7" />
+            </svg>
+            <a href="https://wildsome.netlify.app/" target="_blank"
+              >Wildsome Website
+              <svg
+                class="arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+          </div>
+          <div class="live-project">
+            Moderní webová prezentace inspirovaná světem outdoorových
+            dobrodružství a cestování.
+          </div>
+          <div class="screenshots">
+            <a
+              href="images/wildsome-picture-mobil-lb.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/wildsome-picture-desktop.webp"
+                alt="Wildsome website screenshot 1"
+                class="screenshot"
+              />
+            </a>
+            <a
+              href="images/wildsome-picture_2-mobil-lb.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/wildsome-picture_2-desktop.webp"
+                alt="Wildsome website screenshot 2"
+                class="screenshot"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="project-list">
+        <li>
+          <div class="project-title">
+            <!-- Monitor -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.5"
               stroke-linecap="round"
               stroke-linejoin="round"
-              aria-hidden="true"
             >
-              <path d="M7 17 17 7" />
-              <path d="M7 7h10v10" /></svg
-          ></a>
-        </div>
-        <div class="live-project">
-          Moderní webová prezentace inspirovaná světem outdoorových
-          dobrodružství a cestování.
-        </div>
-        <div class="screenshots">
-          <a
-            href="images/wildsome-picture-mobil-lb.webp"
-            class="glightbox"
-            data-gallery="project-gallery"
-          >
-            <img
-              src="images/wildsome-picture-desktop.webp"
-              alt="Wildsome website screenshot 1"
-              class="screenshot"
-            />
-          </a>
-          <a
-            href="images/wildsome-picture_2-mobil-lb.webp"
-            class="glightbox"
-            data-gallery="project-gallery"
-          >
-            <img
-              src="images/wildsome-picture_2-desktop.webp"
-              alt="Wildsome website screenshot 2"
-              class="screenshot"
-            />
-          </a>
-        </div>
-      </li>
-    </ul>
+              <!-- Zadní celé avokádo -->
+              <path
+                d="M11.8 5.2c-1.2-1.6-3-2.3-4.8-1.5-1.2.5-1.8 1.7-2.6 3.1C3.2 9 2 11.2 2 14a5.8 5.8 0 0 0 5.8 5.8c.8 0 1.5-.2 2.2-.4"
+              />
+
+              <!-- Lístek -->
+              <path d="M8.7 4.6C7.4 2.4 5 2 3.1 2.5c.3 2.2 1.8 3.6 4.1 3.5" />
+              <path d="M3.5 2.8c1.1.8 2.2 1.7 3.2 2.8" />
+
+              <!-- Přední rozkrojené avokádo -->
+              <path
+                d="M15.3 5.5c-1.8 0-2.8 1.7-3.8 3.3-1.4 2.1-3 4.1-3 6.7a6.5 6.5 0 0 0 13 0c0-2.6-1.6-4.6-3-6.7-1-1.6-2-3.3-3.2-3.3z"
+              />
+
+              <!-- Vnitřní obrys -->
+              <path
+                d="M15.3 8.2c-1.1 1.8-2.8 4.2-2.8 6.6a2.8 2.8 0 0 0 5.6 0c0-2.4-1.7-4.8-2.8-6.6z"
+              />
+
+              <!-- Pecka -->
+              <circle cx="15.3" cy="14.8" r="1.6" />
+            </svg>
+            <a href="https://www.avokadoshop.cz" target="_blank"
+              >AvokadoShop.cz Website<svg
+                class="arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+          </div>
+
+          <div class="live-project">
+            Web propagující přírodní produkty pro zdravý životní styl s láskou k
+            přírodě.
+          </div>
+          <div class="screenshots">
+            <a
+              href="images/avokadoshop-picture-mobil.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/avokadoshop-picture-desktop.webp"
+                alt="AvokadoShop.cz website screenshot 1"
+                class="screenshot"
+              />
+            </a>
+            <a
+              href="images/avokadoshop-picture-2-mobil.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/avokadoshop-picture-2-desktop.webp"
+                alt="AvokadoShop.cz website screenshot 2"
+                class="screenshot"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="project-list">
+        <li>
+          <div class="project-title">
+            <!-- Globe -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <line x1="12" y1="2" x2="12" y2="22" />
+            </svg>
+            <a href="https://naucsehtml.cz" target="_blank"
+              >NaučSeHTML.cz
+              <svg
+                class="arrow-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" /></svg
+            ></a>
+          </div>
+          <div class="live-project">Živý web, který učí základy HTML5.</div>
+          <div class="screenshots">
+            <a
+              href="images/naucsehtml-mobil.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/naucsehtml-desktop.webp"
+                alt="NaučSeHTML.cz website screenshot 1"
+                class="screenshot"
+              />
+            </a>
+            <a
+              href="images/naucsehtml-2-mobil.webp"
+              class="glightbox"
+              data-gallery="project-gallery"
+            >
+              <img
+                src="images/naucsehtml-2-desktop.webp"
+                alt="NaučSeHTML.cz website screenshot 2"
+                class="screenshot"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
 
     <h2>Python projekty</h2>
     <ul class="project-list">
@@ -261,69 +411,6 @@
       </li>
     </ul>
 
-    <h2>Živý projekt</h2>
-    <ul class="project-list">
-      <li>
-        <div class="project-title">
-          <!-- Globe -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <circle cx="12" cy="12" r="10" />
-            <line x1="2" y1="12" x2="22" y2="12" />
-            <line x1="12" y1="2" x2="12" y2="22" />
-          </svg>
-          <a href="https://naucsehtml.cz" target="_blank"
-            >NaučSeHTML.cz
-            <svg
-              class="arrow-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="18"
-              height="18"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M7 17 17 7" />
-              <path d="M7 7h10v10" /></svg
-          ></a>
-        </div>
-        <div class="live-project">Živý web, který učí základy HTML5.</div>
-        <div class="screenshots">
-          <a
-            href="images/naucsehtml-mobil.webp"
-            class="glightbox"
-            data-gallery="project-gallery"
-          >
-            <img
-              src="images/naucsehtml-desktop.webp"
-              alt="NaučSeHTML.cz website screenshot 1"
-              class="screenshot"
-            />
-          </a>
-          <a
-            href="images/naucsehtml-2-mobil.webp"
-            class="glightbox"
-            data-gallery="project-gallery"
-          >
-            <img
-              src="images/naucsehtml-2-desktop.webp"
-              alt="NaučSeHTML.cz website screenshot 2"
-              class="screenshot"
-          /></a>
-        </div>
-      </li>
-
-      
-    </ul>
-
     <h2 id="contact">Kontakt</h2>
 
     <div class="contact-info">
@@ -367,7 +454,32 @@
         <span>GitHub profil</span>
       </a>
     </div>
-    <footer>© 2025 Patrik Hlavac</footer>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="footer-brand" href="#about">
+          <span>Patrik Hlavac</span>
+          <span class="footer-role">Front-End Developer</span>
+        </a>
+        <p class="footer-copyright">
+          © <span id="current-year"></span> Patrik Hlavac
+        </p>
+        <a class="footer-top" href="#top"
+          >Zpět nahoru <span aria-hidden="true">↑</span></a
+        >
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector("#current-year").textContent =
+        new Date().getFullYear();
+
+      document
+        .querySelector(".footer-top")
+        .addEventListener("click", (event) => {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 
     <script>
       window.addEventListener("scroll", () => {
